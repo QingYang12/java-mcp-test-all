@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    mcp:
+      client:
+        type: ASYNC
+        sse:
+          config-location: classpath:mcp-servers-config.json
+          connections:
+            server1:
+              url: http://localhost:8089
+    dashscope:
+      enabled: true  # 确保这一行没有被注释掉，并且正确缩进。
+      timeout: 600s
+      # 如果需要，可以取消下面的注释并填写您的API key，但现在既然已禁用，则不需要。
+      api-key: sk-5a839dbb64074a62a1a78e9cb6502bef
+      chat:
+        options:
+          model: qwen-plus
+    plugin:
+      web_search:
+        enable: true
