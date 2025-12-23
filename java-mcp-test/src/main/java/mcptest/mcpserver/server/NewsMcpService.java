@@ -58,7 +58,7 @@ public class NewsMcpService {
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
             headers.setBearerAuth(mcpApiKey); // 使用 Bearer Token
-            //headers.set("Authorization", "Bearer sk-5a839dbb64074a62a1a78e9cb6502bef");
+            //headers.set("Authorization", "Bearer  ");
             /** 构建请求体
             Map<String, Object> body = new HashMap<>();
             body.put("query", query);
