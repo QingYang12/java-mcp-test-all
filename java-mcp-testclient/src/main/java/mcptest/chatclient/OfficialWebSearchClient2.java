@@ -23,7 +23,7 @@ import java.util.Map;
 
 //@Component
 public class OfficialWebSearchClient2 {
-    private static final String API_KEY = "sk-5a839dbb64074a62a1a78e9cb6502bef"; // 替换为您的真实 KEY
+    private static final String API_KEY = ""; // 替换为您的真实 KEY
     public List<NewsItem> searchWeb2(
             @ToolParam(description = "要搜索的查询语句") String query) throws NoApiKeyException, InputRequiredException {
 
