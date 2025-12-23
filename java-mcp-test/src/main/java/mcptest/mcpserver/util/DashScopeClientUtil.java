@@ -12,7 +12,7 @@ import java.util.*;
 public class DashScopeClientUtil {
 
     @Value("${qwenkey}")
-    private String API_KEY="sk-5a839dbb64074a62a1a78e9cb6502bef";
+    private String API_KEY="";
     private static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
     private final OkHttpClient client = new OkHttpClient();
 
